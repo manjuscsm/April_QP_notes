@@ -1,0 +1,20 @@
+Blue green deployment:
+
+Software release strategy that involves creating two identiacal production environments referred to blue and green . 
+In this deployment strategy , one environment ( e.g blue environment) is currently in the production while the other environment 
+e.g green env us used for testing and staging
+
+Benefits:
+
+1) Zero Downtime deployment: Ability to deploy the change without any downtime because the new changes are depployed to the staging environment . 
+e.g green environment and only after the changes are validated and tested they are moved to the blue env.
+
+2) Roll back capability: It has the ability to roll back to the previous version of the application quickly. This is because the previous version is still runnning on the produuction environment (blue) while version is being tested in the staging environment
+
+3) reduced risk : with blue green deployment there is a reduced risk of deploying faulty or buggy code to the production environment . this is because the new changes are thoroughly tested and validated on the staging environment. 
+
+4) Improved testing
+
+5) Easy maintenance : blue green deployment in jenkins allows for easy maintenance of production env. this is because the blue en can be taken down for 
+the maintainence and upgrades while the staging env continue to server users without interruption.
+
